@@ -32,15 +32,14 @@ body {
   margin-bottom: 20px;
 }
 
-.converter input,
-.converter select,
-.converter button {
+.form-element {
   display: block;
   width: 100%;
   margin: 10px 0;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .converter button {
@@ -57,4 +56,9 @@ body {
 #result {
   margin-top: 20px;
   font-size: 1.2em;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
 }
