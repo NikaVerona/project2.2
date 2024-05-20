@@ -11,16 +11,25 @@
       <img src="logo.webp" alt="Logo" class="logo" />
       <div class="converter">
         <h1>Currency Converter</h1>
-        <input type="number" id="amount" placeholder="Enter amount" />
-        <select id="currency">
-          <option value="EUR">Euro (EUR)</option>
-          <option value="USD">USA dollars (USD)</option>
-          <option value="CHF">Swiss francs (CHF)</option>
-        </select>
-        <button onclick="convertCurrency()">Convert</button>
+        <form id="converter-form">
+          <input
+            type="number"
+            name="amount"
+            class="form-element"
+            placeholder="Enter amount"
+          />
+          <select name="currency" class="form-element">
+            <option value="EUR">Euro (EUR)</option>
+            <option value="USD">USA dollars (USD)</option>
+            <option value="CHF">Swiss francs (CHF)</option>
+          </select>
+          <button type="submit" class="form-element">Convert</button>
+        </form>
         <div id="result">Amount in PLN: -</div>
+        <div id="error-message" class="error-message"></div>
       </div>
     </div>
     <script src="script.js"></script>
   </body>
 </html>
+
